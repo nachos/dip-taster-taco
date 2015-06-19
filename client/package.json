@@ -1,0 +1,17 @@
+{
+  "name": "dip-taster",
+  "version": "0.0.0",
+  "description": "Tasting dips",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "frame": false,
+    "position": "center",
+    "fullscreen": false,
+    "resizable": true,
+    "transparent": true,
+    "width": 1000,
+    "height": 800
+  }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="dip-tasterApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
+  <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" href=".tmp/app/app.css">
+  <!-- injector:css -->
+  <!-- endinjector -->
+</head>
+<body>
+<div ui-view flex layout="column" layout-fill></div>
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/ng-lodash/build/ng-lodash.js"></script>
+<script src="bower_components/iframe-wrapper-directive/src/iframeWrapper.directive.js"></script>
+<script src="bower_components/javascript-detect-element-resize/detect-element-resize.js"></script>
+<script src="bower_components/angular-gridster/src/angular-gridster.js"></script>
+<!-- endbower -->
+<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+<script src="app/app.js"></script>
+<!-- injector:js -->
+<script src="app/about/about.controller.js"></script>
+<script src="app/main/main.controller.js"></script>
+<script src="app/main/main.js"></script>
+<script src="app/shell/shell.controller.js"></script>
+<script src="app/shell/shell.js"></script>
+<script src="components/dragndrop/dragndrop.service.js"></script>
+<script src="components/grid/grid.service.js"></script>
+<script src="components/iframeHandler/iframeHandler.service.js"></script>
+<!-- endinjector -->
+</body>
+</html>

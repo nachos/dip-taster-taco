@@ -1,0 +1,36 @@
+<div id="main" class="main" flex layout="column" layout-align="sapce-between">
+  <div gridster="grid.settings" flex class="grid">
+    <div gridster-item class="md-whiteframe-z1">
+
+      <div class="dip" layout="column">
+        <div layout="row" layout-align="end" class="foreground" ng-show="grid.editMode" ng-class="{ enabled: grid.editMode }">
+        </div>
+        <div id="holder" flex ng-show="dragndrop.drag"></div>
+
+        <div ng-hide="dragndrop.drag" layout="column" flex>
+          <div ng-if="iframeHandler.loaded" layout="column" flex>
+            <iframe-wrapper src="iframeHandler.item.main" content="iframeHandler.item.content" flex></iframe-wrapper>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar" layout="row">
+    <div flex>
+      <md-button ng-click="grid.toggleEditMode()" class="md-icon-button">
+        <md-tooltip md-direction="top">
+          <span>Edit</span>
+        </md-tooltip>
+        <i ng-hide="grid.editMode" class="mdi mdi-layers"></i>
+        <i ng-show="grid.editMode" class="mdi mdi-layers-off"></i>
+      </md-button>
+      <md-button ng-click="showGridBottomSheet()" class="md-icon-button">
+        <md-tooltip md-direction="top">
+          <span>About</span>
+        </md-tooltip>
+        <i class="mdi mdi-information"></i>
+      </md-button>
+    </div>
+  </div>
+</div>

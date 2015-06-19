@@ -1,0 +1,56 @@
+.main {
+  .grid{
+    background: url("../../app/content/background.jpg");
+  }
+
+  .gridster {
+    margin: initial;
+
+    .gridster-item {
+      border-radius: 2px;
+      overflow: hidden;
+      color: #004756;
+
+      .dip {
+        background-color: white;
+        width: 100% !important;
+        height: 100% !important;
+
+        .foreground {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: all 0.3s ease;
+
+          .big-icon {
+            font-size: 20pt;
+          }
+
+          &.enabled {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+
+  .taskbar {
+    background-color: #262626;
+  }
+
+  .md-icon-button {
+    color: white;
+  }
+}
+
+#holder {
+  border: 10px dashed #ccc;
+
+  &.hover {
+    border: 10px dashed #333;
+  }
+}
+
+

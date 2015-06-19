@@ -1,0 +1,80 @@
+html,
+body {
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+iframe {
+  border: none;
+}
+.md-subheader {
+  margin-right: 0;
+  background-color: transparent!important;
+}
+.main .grid {
+  background: url("../../app/content/background.jpg");
+}
+.main .gridster {
+  margin: initial;
+}
+.main .gridster .gridster-item {
+  border-radius: 2px;
+  overflow: hidden;
+  color: #004756;
+}
+.main .gridster .gridster-item .dip {
+  background-color: white;
+  width: 100% !important;
+  height: 100% !important;
+}
+.main .gridster .gridster-item .dip .foreground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+}
+.main .gridster .gridster-item .dip .foreground .big-icon {
+  font-size: 20pt;
+}
+.main .gridster .gridster-item .dip .foreground.enabled {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.main .taskbar {
+  background-color: #262626;
+}
+.main .md-icon-button {
+  color: white;
+}
+#holder {
+  border: 10px dashed #ccc;
+}
+#holder.hover {
+  border: 10px dashed #333;
+}
+.shell {
+  margin: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.shell.maximized {
+  margin: 0;
+  border-radius: 0;
+}
+.shell .titlebar {
+  -webkit-user-select: none;
+  width: 100%;
+  height: 32px;
+  background-color: #616161;
+  padding: 0 10px;
+}
+.shell .titlebar .content {
+  -webkit-app-region: drag;
+  height: 100%;
+}
+.shell .titlebar i {
+  color: #ffffff;
+}
